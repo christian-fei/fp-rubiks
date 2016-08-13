@@ -1,15 +1,19 @@
 module FPRubiks (
   isSolved
-  , RubiksCube(.. )
+  , RubiksCube(..)
+  , Color(..)
 )
 where
 
 data RubiksCube =
   SolvedRubiksCube
-  | Cell
+  | Cell Color
+
+data Color =
+  White
 
 isSolved :: RubiksCube -> Bool
 isSolved xs =
   case xs of
     SolvedRubiksCube   -> True
-    Cell -> False
+    Cell White -> False
