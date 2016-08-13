@@ -4,12 +4,13 @@ where
 import Test.Framework
 import Test.Framework.Providers.HUnit
 import Test.HUnit
-import FPRubiks
+import FPRubiks (isSolved, RubiksCube(..))
 
 main = defaultMain testSuite
 
 
-soldedRubiksCube = []
+solvedRubiksCube :: RubiksCube
+solvedRubiksCube = Something
 
 
 testSuite = hUnitTestToTests $ TestList $
@@ -17,5 +18,5 @@ testSuite = hUnitTestToTests $ TestList $
 
 tests =
   [
-    FPRubiks.isSolved soldedRubiksCube ~?= True
+    isSolved solvedRubiksCube ~?= True
   ]
