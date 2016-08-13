@@ -1,11 +1,11 @@
 module FPRubiks (
   isSolved
-  , RubiksCube(..)
+  , RubiksCube(.. )
 )
 where
 
 data RubiksCube =
-  Something
+  SolvedRubiksCube
 
 isSolved :: RubiksCube -> Bool
 isSolved xs = True

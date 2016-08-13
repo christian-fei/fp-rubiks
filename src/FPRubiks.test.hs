@@ -9,14 +9,10 @@ import FPRubiks (isSolved, RubiksCube(..))
 main = defaultMain testSuite
 
 
-solvedRubiksCube :: RubiksCube
-solvedRubiksCube = Something
-
-
 testSuite = hUnitTestToTests $ TestList $
   tests
 
 tests =
   [
-    isSolved solvedRubiksCube ~?= True
+    isSolved SolvedRubiksCube ~?= True
   ]
