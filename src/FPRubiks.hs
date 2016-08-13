@@ -3,5 +3,5 @@ module FPRubiks (
 )
 where
 
-isSolved :: ()
-isSolved = ()
+isSolved :: [a] -> Bool
+isSolved xs = True

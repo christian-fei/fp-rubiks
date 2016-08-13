@@ -8,6 +8,10 @@ import FPRubiks
 
 main = defaultMain testSuite
 
+
+soldedRubiksCube = []
+
+
 testSuite = hUnitTestToTests $ TestList $
   tests
 
