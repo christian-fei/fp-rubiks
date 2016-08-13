@@ -12,7 +12,7 @@ data Cell =
 data RubiksCube =
   SolvedRubiksCube
   | Cell Color
-  | Layer Cell
+  | Layer [Cell]
 
 data Color =
   White

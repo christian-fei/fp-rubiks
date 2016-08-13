@@ -15,5 +15,5 @@ testSuite = hUnitTestToTests $ TestList $
 tests =
   [
     isSolved SolvedRubiksCube ~?= True
-    , isSolved (Layer WhiteCell) ~?= False
+    , isSolved (Layer [WhiteCell]) ~?= False
   ]
