@@ -4,7 +4,7 @@ where
 import Test.Framework
 import Test.Framework.Providers.HUnit
 import Test.HUnit
-import FPRubiks (isSolved, RubiksCube(..), Color(..))
+import FPRubiks (isSolved, Cell(..), RubiksCube(..), Color(..))
 
 main = defaultMain testSuite
 
@@ -15,5 +15,5 @@ testSuite = hUnitTestToTests $ TestList $
 tests =
   [
     isSolved SolvedRubiksCube ~?= True
-    , isSolved (Cell White) ~?= False
+    , isSolved (Layer WhiteCell) ~?= False
   ]
