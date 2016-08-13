@@ -6,10 +6,10 @@ where
 
 data RubiksCube =
   SolvedRubiksCube
-  | UnsolvedRubiksCube
+  | Cell
 
 isSolved :: RubiksCube -> Bool
 isSolved xs =
   case xs of
     SolvedRubiksCube   -> True
-    UnsolvedRubiksCube -> False
+    Cell -> False

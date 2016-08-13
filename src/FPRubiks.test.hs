@@ -15,5 +15,5 @@ testSuite = hUnitTestToTests $ TestList $
 tests =
   [
     isSolved SolvedRubiksCube ~?= True
-    , isSolved UnsolvedRubiksCube ~?= False
+    , isSolved Cell ~?= False
   ]
