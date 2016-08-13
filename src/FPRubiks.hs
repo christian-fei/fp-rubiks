@@ -1,3 +1,7 @@
-module FPRubix (
+module FPRubiks (
+  isSolved
 )
 where
+
+isSolved :: ()
+isSolved = ()
