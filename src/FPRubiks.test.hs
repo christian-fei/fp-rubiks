@@ -5,9 +5,9 @@ import Test.Framework
 import Test.Framework.Providers.HUnit
 import Test.HUnit
 
-main = defaultMain tests
+main = defaultMain testSuite
 
-tests = hUnitTestToTests $ TestList $
+testSuite = hUnitTestToTests $ TestList $
   tests
 
 tests =
